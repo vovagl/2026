@@ -1,0 +1,122 @@
+
+.timer-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.timer-overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  border-radius: 15px;
+  width: 100%; 
+  max-width: 600px;
+}
+.timer-blocks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.timer-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+
+.timer-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.timer-label {
+  font-size: 1rem;
+}
+
+.timer-overlay h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .timer-overlay {
+    margin-top: 40vh; 
+    width: 70%;
+    padding: 20px;
+  }
+  .timer-number {
+    font-size: 2rem;
+  }
+  .timer-label {
+    font-size: 0.9rem;
+  }
+  .timer-overlay h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timer-container {
+    width: 100vw;       
+    height: 100vh;      
+    padding: 0;
+  }
+  .timer-overlay {
+    width: 90%;         
+    padding: 15px;      
+    border-radius: 10px;
+  }
+  .timer-blocks {
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: nowrap; 
+    justify-content: space-around;
+  }
+  .timer-block {
+    min-width: auto; 
+  }
+  .timer-number {
+    font-size: 1.8rem;
+  }
+  .timer-label {
+    font-size: 0.7rem;
+  }
+  .timer-overlay h1 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .timer-overlay {
+    margin-top: 60vh; 
+    width: 60%;
+    padding: 25px;
+  }
+
+  .timer-blocks {
+    gap: 20px;
+  }
+
+  .timer-number {
+    font-size: 3rem;
+  }
+
+  .timer-label {
+    font-size: 1.2rem;
+  }
+
+  .timer-overlay h1 {
+    font-size: 2.5rem;
+  }
+}
